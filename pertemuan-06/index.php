@@ -1,6 +1,42 @@
 <?php
-// Pengujian awal eksekusi PHP.
-echo "PHP berhasil dijalankan.";
+// Variabel profil mahasiswa
+$nama = "Rafli";
+$jurusan = "Teknik Informatika";
+$semester = 1;
+$ipk = 3.75;
+$statusAktif = true;
+$catatan = null;
+
+// Konstanta
+define("NAMA_KAMPUS", "ISB Atma Luhur");
+
+// Kondisi if-elseif-else
+if ($semester == 1) {
+    $statusMahasiswa = "Mahasiswa Baru";
+} elseif ($semester <= 4) {
+    $statusMahasiswa = "Mahasiswa Pertengahan";
+} else {
+    $statusMahasiswa = "Mahasiswa Tingkat Akhir";
+}
+
+// Kondisi switch
+switch ($semester) {
+    case 1:
+        $keteranganSemester = "Semester Pertama";
+        break;
+    case 2:
+        $keteranganSemester = "Semester Kedua";
+        break;
+    default:
+        $keteranganSemester = "Semester $semester";
+}
+
+// Perulangan for
+$daftarHobi = ["Coding", "Gaming", "Membaca"];
+
+// Perulangan while
+$jumlahHobi = count($daftarHobi);
+$nomorHobi = 0;
 ?>
 <!doctype html>
 <html lang="id">
