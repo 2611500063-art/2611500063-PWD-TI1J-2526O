@@ -70,7 +70,8 @@ $nomorHobi = 0;
         <section id="home">
             <h2>Selamat Datang</h2>
             <p>
-                Halo, saya Nama Mahasiswa. Saya sedang mempelajari Pemrograman Web
+                Halo, Muhamad
+                <?= htmlspecialchars($nama) ?>. Saya sedang mempelajari Pemrograman Web
                 Dasar.
             </p>
             <img src="img/rafli.jpg" alt="Foto profil Nama Mahasiswa" />

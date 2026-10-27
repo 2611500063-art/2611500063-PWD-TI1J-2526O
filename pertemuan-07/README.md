@@ -1,9 +1,4 @@
-# 2611500063-PWD-TI1A-2627O_1
+pada p7, saya melakukan
 
-Repository Latihan Pertemuan-1 sampai dengan Pertemuan-16  
-Mata Kuliah: Pemrograman Web Dasar  
-Kelompok: TI1A 
-Tahun Ajaran: 2025/2026  
-Semester: Gasal  
-
-![Logo ISBAL](logoisbal.png)
+1. menyalin artefak p6 untuk menjadi baseline p7
+2. mengiju fitur pada p7, hasilnya jalan seperti p6.
