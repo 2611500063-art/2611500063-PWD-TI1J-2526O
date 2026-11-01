@@ -154,7 +154,7 @@ switch ($programStudi) {
             <a target="_blank" href="https://github.com/<?= PROFIL_GITHUB ?>">profil GitHub saya</a>.
             </p>
 
-            <form action="index.html" method="get">
+            <form action="index.php" method="get">
                 <div class="form-group">
                     <label for="nama">Nama Lengkap</label><br />
                     <input class="input-form" type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap"
