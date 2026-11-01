@@ -2,7 +2,7 @@
 // P6: PHP dasar dan pemrograman sisi peladen
 // Bagian 1: Variabel dan konstanta
 $nim = "2611500063";
-$namaMahasiswa = "rafli";
+$namaMahasiswa = "muhammad rafli";
 $programStudi = "TI";
 $tahunAkademik = "2026/2027";
 $semester = 1;
@@ -207,7 +207,11 @@ switch ($programStudi) {
         </section>
 
         <footer>
-            <p>&copy; 2026 Rafli [2611500063]</p>
+            <p>&copy;
+                <?= date("Y") ?>
+                <?php echo $namaMahasiswa; ?> [
+                <?= $nim ?>]
+            </p>
         </footer>
         <script src="script.js"></script>
 </body>
