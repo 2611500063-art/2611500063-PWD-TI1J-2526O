@@ -1,3 +1,14 @@
+<?php
+// P6: PHP dasar dan pemrograman sisi peladen
+// Bagian 1: Variabel dan konstanta
+$nim = "2611500063";
+$namaMahasiswa = "rafli";
+$programStudi = "TI";
+$tahunAkademik = "2026/2027";
+$semester = 1;
+$ipk = 3.75;
+$statusAktif = true;
+$catatanTambahan = null;
 ?>
 <!doctype html>
 <html lang="id">
@@ -10,10 +21,6 @@
 </head>
 
 <body>
-    <p>Konten HTML statis.</p>
-    <?php
-    echo "<p>Konten yang dihasilkan oleh PHP.</p>";
-    ?>
     <header>
         <div class="header-top">
             <h1>Profil Mahasiswa</h1>
@@ -31,20 +38,22 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <section id="home">
             <h2>Selamat Datang</h2>
             <p>Halo,saya rafli. saya sedang mempelajari pemrograman web dasar</p>
-            <img src="img/rafli.jpg" alt="Foto profil Nama Mahasiswa" />
+            <img src="img/rafli.jpg" alt="Foto profil " />
         </section>
 
         <section id="about">
             <h2>Tentang Saya</h2>
             <article>
                 <h3>Profil Singkat</h3>
-                <p>Saya mahasiswa Program Studi Sistem Informasi.</p>
+                <p>Saya mahasiswa Program Studi Teknik Informatika.</p>
+
                 <h3>Target Belajar</h3>
-                -
+
                 <ol>
                     <li>Memahami struktur HTML5.</li>
                     <li>Menyusun halaman web semantik.</li>
@@ -52,6 +61,7 @@
                 </ol>
             </article>
         </section>
+
         <section id="contact">
             <h2>Kontak</h2>
             <p>
@@ -103,17 +113,17 @@
                     <textarea class="input-form" id="pesan" name="pesan" maxlength="300" placeholder="Tulis pesan Anda"
                         required></textarea>
                 </div>
+
                 <button type="submit">Kirim</button>
                 <button type="reset">Batal</button>
                 <p id="formFeedbck"></p>
             </form>
         </section>
-    </main>
 
-    <footer>
-        <p>&copy; 2026 Muhamad Rafli [2611500063]</p>
-    </footer>
-    <script src="script.js"></script>
+        <footer>
+            <p>&copy; 2026 Rafli [2611500063]</p>
+        </footer>
+        <script src="script.js"></script>
 </body>
 
 </html>
