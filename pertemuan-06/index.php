@@ -94,6 +94,9 @@ switch ($programStudi) {
                     <?php echo $statusAktif ? "Aktif" : "Tidak aktif"; ?>
                 </p>
                 <p>Fokus program studi: <?php echo $fokusProgramStudi; ?></p>
+                <p>IPK:
+                    <?php echo number_format($ipk, 2, ',', '.'); ?>
+                </p>
                 <p>Saya mahasiswa Program Studi Teknik Informatika.</p>
 
                 <h3>Target Belajar (Perulangan for)</h3>
@@ -132,12 +135,11 @@ switch ($programStudi) {
                         }
                         ?>
                     </ol>
-                </ol>
-                <ol>
-                    <li>Memahami struktur HTML5.</li>
-                    <li>Menyusun halaman web semantik.</li>
-                    <li>Memvalidasi dokumen HTML.</li>
-                </ol>
+                    <ol>
+                        <li>Memahami struktur HTML5.</li>
+                        <li>Menyusun halaman web semantik.</li>
+                        <li>Memvalidasi dokumen HTML.</li>
+                    </ol>
             </article>
         </section>
 
