@@ -1,11 +1,3 @@
-<?php
-// Komentar satu baris.
-print "Keluaran menggunakan print.";
-/*
-Komentar beberapa baris.
-Komentar ini tidak ditampilkan pada halaman.
-*/
-?>
 ?>
 <!doctype html>
 <html lang="id">
@@ -18,6 +10,10 @@ Komentar ini tidak ditampilkan pada halaman.
 </head>
 
 <body>
+    <p>Konten HTML statis.</p>
+    <?php
+    echo "<p>Konten yang dihasilkan oleh PHP.</p>";
+    ?>
     <header>
         <div class="header-top">
             <h1>Profil Mahasiswa</h1>
