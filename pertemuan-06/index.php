@@ -96,7 +96,6 @@ switch ($programStudi) {
                 <p>Fokus program studi: <?php echo $fokusProgramStudi; ?></p>
                 <p>Saya mahasiswa Program Studi Teknik Informatika.</p>
 
-                <h3>Target Belajar</h3>
                 <h3>Target Belajar (Perulangan for)</h3>
                 <ol>
                     <?php
@@ -123,6 +122,16 @@ switch ($programStudi) {
                         echo "</li>";
                     }
                     ?>
+                    <h3>Semester (Perulangan while):</h3>
+                    <ol>
+                        <?php
+                        $nomorSemester = 1;
+                        while ($nomorSemester <= 3) {
+                            echo "<li>Semester " . $nomorSemester . "</li>";
+                            $nomorSemester++; // operator penugasan
+                        }
+                        ?>
+                    </ol>
                 </ol>
                 <ol>
                     <li>Memahami struktur HTML5.</li>
