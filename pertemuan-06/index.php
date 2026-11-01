@@ -149,10 +149,11 @@ switch ($programStudi) {
 
         <section id="contact">
             <h2>Kontak</h2>
-            <p>
-                Kunjungi
-                <a target="_blank" href="https://github.com/<?= PROFIL_GITHUB ?>">profil GitHub saya</a>.
+            <p></p>
+            Kunjungi
+            <a target="_blank" href="https://github.com/<?= PROFIL_GITHUB ?>">profil GitHub saya</a>.
             </p>
+
             <form action="index.html" method="get">
                 <div class="form-group">
                     <label for="nama">Nama Lengkap</label><br />
