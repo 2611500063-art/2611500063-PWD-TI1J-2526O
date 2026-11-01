@@ -1,42 +1,6 @@
 <?php
-// Variabel profil mahasiswa
-$nama = "Rafli";
-$jurusan = "Teknik Informatika";
-$semester = 1;
-$ipk = 3.75;
-$statusAktif = true;
-$catatan = null;
-
-// Konstanta
-define("NAMA_KAMPUS", "ISB Atma Luhur");
-
-// Kondisi if-elseif-else
-if ($semester == 1) {
-    $statusMahasiswa = "Mahasiswa Baru";
-} elseif ($semester <= 4) {
-    $statusMahasiswa = "Mahasiswa Pertengahan";
-} else {
-    $statusMahasiswa = "Mahasiswa Tingkat Akhir";
-}
-
-// Kondisi switch
-switch ($semester) {
-    case 1:
-        $keteranganSemester = "Semester Pertama";
-        break;
-    case 2:
-        $keteranganSemester = "Semester Kedua";
-        break;
-    default:
-        $keteranganSemester = "Semester $semester";
-}
-
-// Perulangan for
-$daftarHobi = ["Coding", "Gaming", "Membaca"];
-
-// Perulangan while
-$jumlahHobi = count($daftarHobi);
-$nomorHobi = 0;
+// Pengujian awal eksekusi PHP.
+echo "PHP berhasil dijalankan.";
 ?>
 <!doctype html>
 <html lang="id">
@@ -69,13 +33,10 @@ $nomorHobi = 0;
     <main>
         <section id="home">
             <h2>Selamat Datang</h2>
-            <p>
-                Halo, Muhamad
-                <?= htmlspecialchars($nama) ?>. Saya sedang mempelajari Pemrograman Web
-                Dasar.
-            </p>
+            <p>Halo,saya rafli. saya sedang mempelajari pemrograman web dasar</p>
             <img src="img/rafli.jpg" alt="Foto profil Nama Mahasiswa" />
         </section>
+
         <section id="about">
             <h2>Tentang Saya</h2>
             <article>
