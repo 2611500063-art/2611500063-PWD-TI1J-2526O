@@ -1,9 +1,6 @@
-# 2611500063-PWD-TI1A-2627O_1
+pada p7, saya melakukan:
 
-Repository Latihan Pertemuan-1 sampai dengan Pertemuan-16  
-Mata Kuliah: Pemrograman Web Dasar  
-Kelompok: TI1A 
-Tahun Ajaran: 2025/2026  
-Semester: Gasal  
-
-![Logo ISBAL](logoisbal.png)
+1. menyalin artefak P6 untuk menjadi baseline P7
+2. menguji fitur pada P7, hasilnya jalan seperti P6.
+3. meremark event.preventDefault(); pada script.js dan mencoba superglobal $\_GET untuk menangkap nilai yang diisikan pada formulir.
+4. mencoba method post. hasilnya parameter tidak ditampilkan pada url, tetapi menggunakan echo superglobal $\_POST untuk menampilkan nilai dari input form.
