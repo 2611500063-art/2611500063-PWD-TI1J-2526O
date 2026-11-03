@@ -106,14 +106,67 @@ switch ($programStudi) {
 	</header>
 
 	<main>
+
+		<!-- SECTION BERANDA -->
 		<section id="home">
 			<h2>Selamat Datang</h2>
-			<p>Halo, saya <strong><?php echo $namaMahasiswa; ?></strong>. Saya sedang mempelajari matakuliah
-				<strong><?php print NAMA_MATA_KULIAH; ?></strong> pada tahun akademik <?php echo $tahunAkademik; ?>.
-			</p>
-
-			<img src="img/foto-profil.jpg" alt="Foto profil Nama Mahasiswa" />
+			<p>Halo, saya <?php echo $namaMahasiswa; ?>.</p>
 		</section>
+
+		<!-- SECTION TENTANG -->
+		<section id="about">
+			<h2>Tentang Saya</h2>
+			<p>Program Studi: <?php echo $namaProdi; ?></p>
+			<p>Semester: <?php echo $semester; ?></p>
+		</section>
+
+		<!-- SECTION PEMINJAMAN FASILITAS -->
+
+		<section id="peminjaman">
+			<h2>Permohonan Peminjaman Fasilitas Kampus</h2>
+
+			<p>Silakan isi formulir berikut untuk mengajukan peminjaman fasilitas kampus.</p>
+
+			<form id="peminjamanForm" action="index.php" method="post">
+				<div class="form-group">
+					<label for="nama_penanggung_jawab">Nama Penanggung Jawab</label>
+					<input class="input-form" type="text" id="nama_penanggung_jawab" name="nama_penanggung_jawab"
+						placeholder="Masukkan nama penanggung jawab" minlength="3" maxlength="50" required />
+				</div>
+
+				<div class="form-group">
+					<label for="jenis_fasilitas">Jenis Fasilitas</label>
+					<select class="input-form" id="jenis_fasilitas" name="jenis_fasilitas" required>
+						<option value="">-- Pilih Jenis Fasilitas --</option>
+						<option value="Ruang Kelas">Ruang Kelas</option>
+						<option value="Aula">Aula</option>
+						<option value="Laboratorium Komputer">Laboratorium Komputer</option>
+						<option value="Proyektor">Proyektor</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<label for="tanggal_peminjaman">Tanggal Peminjaman</label>
+					<input class="input-form" type="date" id="tanggal_peminjaman" name="tanggal_peminjaman" required />
+				</div>
+
+				<div class="form-group">
+					<label for="durasi_peminjaman">Durasi Peminjaman (jam)</label>
+					<input class="input-form" type="number" id="durasi_peminjaman" name="durasi_peminjaman" min="1" max="24"
+						placeholder="Masukkan durasi dalam jam" required />
+				</div>
+
+				<div class="form-group">
+					<label for="keperluan_peminjaman">Keperluan Peminjaman</label>
+					<textarea class="input-form" id="keperluan_peminjaman" name="keperluan_peminjaman" rows="5" minlength="10"
+						maxlength="500" placeholder="Tuliskan keperluan peminjaman" required></textarea>
+				</div>
+
+				<button type="submit" name="form_peminjaman" value="1">Kirim</button>
+				<button type="reset">Batal</button>
+			</form>
+		</section>
+
 
 		<section id="about">
 			<h2>Tentang Saya</h2>
