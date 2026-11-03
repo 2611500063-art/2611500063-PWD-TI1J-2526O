@@ -45,7 +45,7 @@ $statusAktif = true;
 $catatanTambahan = null;
 
 const NAMA_MATA_KULIAH = "Pemrograman Web Dasar";
-const PROFIL_GITHUB = "satpamal";
+const NAMA_MAHASISWA = "Muhamad Rafli";
 
 // Bagian 2: Operator
 $batasSemester = 8;
@@ -91,30 +91,26 @@ switch ($programStudi) {
 		<div class="header-top">
 			<h1>Profil Mahasiswa</h1>
 
-			<button
-				class="nav-toggle"
-				id="navToggle"
-				type="button"
-				aria-label="Buka navigasi"
-				aria-controls="navMenu"
+			<button class="nav-toggle" id="navToggle" type="button" aria-label="Buka navigasi" aria-controls="navMenu"
 				aria-expanded="false">
 				&#9776;
 			</button>
 		</div>
 
-		<nav>
-			<ul id="navMenu">
-				<li><a href="#home">Beranda</a></li>
-				<li><a href="#about">Tentang</a></li>
-				<li><a href="#contact">Kontak</a></li>
-			</ul>
-		</nav>
+		<ul id="navMenu">
+			<li><a href="#home">Beranda</a></li>
+			<li><a href="#about">Tentang</a></li>
+			<li><a href="#peminjaman">Peminjaman Fasilitas</a></li>
+			<li><a href="#contact">Kontak</a></li>
+		</ul>
 	</header>
 
 	<main>
 		<section id="home">
 			<h2>Selamat Datang</h2>
-			<p>Halo, saya <strong><?php echo $namaMahasiswa; ?></strong>. Saya sedang mempelajari matakuliah <strong><?php print NAMA_MATA_KULIAH; ?></strong> pada tahun akademik <?php echo $tahunAkademik; ?>.</p>
+			<p>Halo, saya <strong><?php echo $namaMahasiswa; ?></strong>. Saya sedang mempelajari matakuliah
+				<strong><?php print NAMA_MATA_KULIAH; ?></strong> pada tahun akademik <?php echo $tahunAkademik; ?>.
+			</p>
 
 			<img src="img/foto-profil.jpg" alt="Foto profil Nama Mahasiswa" />
 		</section>
@@ -182,19 +178,13 @@ switch ($programStudi) {
 				<a target="_blank" href="https://github.com/<?= PROFIL_GITHUB ?>">profil GitHub saya</a>.
 			</p>
 
-			<form id="contactForm" class="js-contact-form" data-validation="contact" action="index.php" method="post" novalidate>
+			<form id="contactForm" class="js-contact-form" data-validation="contact" action="index.php" method="post"
+				novalidate>
 				<div class="form-group">
 					<label for="nama">Nama Lengkap</label><br />
 
-					<input
-						class="input-form"
-						type="text"
-						id="nama"
-						name="nama"
-						placeholder="Masukkan nama lengkap"
-						minlength="3"
-						maxlength="50"
-						required />
+					<input class="input-form" type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" minlength="3"
+						maxlength="50" required />
 				</div>
 
 				<div class="form-group">
@@ -248,12 +238,7 @@ switch ($programStudi) {
 				<div class="form-group">
 					<label for="pesan">Pesan</label><br />
 
-					<textarea
-						class="input-form"
-						id="pesan"
-						name="pesan"
-						maxlength="300"
-						placeholder="Tulis pesan Anda"
+					<textarea class="input-form" id="pesan" name="pesan" maxlength="300" placeholder="Tulis pesan Anda"
 						required></textarea>
 				</div>
 
@@ -268,8 +253,10 @@ switch ($programStudi) {
 					<p><strong>Nama Lengkap:</strong> <?= htmlspecialchars($_SESSION["nama"] ?? "", ENT_QUOTES, "UTF-8") ?></p>
 					<p><strong>Email:</strong> <?= htmlspecialchars($_SESSION["email"] ?? "", ENT_QUOTES, "UTF-8") ?></p>
 					<p><strong>Semester:</strong> <?= htmlspecialchars($_SESSION["semester"] ?? "", ENT_QUOTES, "UTF-8") ?></p>
-					<p><strong>Tanggal Kunjungan:</strong> <?= htmlspecialchars($_SESSION["tanggal"] ?? "", ENT_QUOTES, "UTF-8") ?></p>
-					<p><strong>Jenis Pesan:</strong> <?= htmlspecialchars($_SESSION["jenis_pesan"] ?? "", ENT_QUOTES, "UTF-8") ?></p>
+					<p><strong>Tanggal Kunjungan:</strong> <?= htmlspecialchars($_SESSION["tanggal"] ?? "", ENT_QUOTES, "UTF-8") ?>
+					</p>
+					<p><strong>Jenis Pesan:</strong> <?= htmlspecialchars($_SESSION["jenis_pesan"] ?? "", ENT_QUOTES, "UTF-8") ?>
+					</p>
 					<p><strong>Topik yang Diminati:</strong>
 						<?= htmlspecialchars(implode(", ", $_SESSION["minat"] ?? []), ENT_QUOTES, "UTF-8") ?>
 					</p>
